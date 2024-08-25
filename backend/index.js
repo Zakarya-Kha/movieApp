@@ -18,9 +18,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
+// Update your CORS configuration
 const corsOptions = {
-  origin:  'https://movie-app-ebon-one-61.vercel.app',
-  credentials: true,
+  origin: 'https://movie-app-ebon-one-61.vercel.app', // Add your frontend origin here
+  credentials: true, // Enable credentials (cookies, authorization headers, etc.)
 };
 app.use(cors(corsOptions));
 
