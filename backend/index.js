@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
 const corsOptions = {
-  origin:  'https://movie-app-e6xy.vercel.app',
+  origin:  'https://movie-app-ebon-one-61.vercel.app',
   credentials: true,
 };
 app.use(cors(corsOptions));
